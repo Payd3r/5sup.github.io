@@ -8,13 +8,15 @@
             display: block;
             margin-left: auto;
             margin-right: auto;
-            width: 50%;
-            font-size: 5;
+            width: 55%;
+            font-size: 6;
         }
-
         .link {
-            color: blue;
+            color: green;
         }
+		body{
+		background-color:light-gray;
+		}
     </style>
     <script type="text/javascript">
         function bilancia(textBox1, textBox2) {
@@ -34,7 +36,7 @@
 
 <body>
     Volume: <input type="text" value="" id="textbl1"><br><br>
-    Materiale: <input type="text" value="" id="textbl2"><input type="button" value="Calcola!" name="btn"
+    Materiale: <input type="text" value="" id="textbl2"><input type="button" value="calcola" name="btn"
         onclick="bilancia(document.getElementById('textbl1').value,document.getElementById('textbl2').value);"
         style="margin-left: 30px;"><br><br>
     Peso: <output id="result"></output>
