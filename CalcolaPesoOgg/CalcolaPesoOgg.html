@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <title>CalcolaPesoOgg</title>
+    <meta charset="utf-8">
+    <style>
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            font-size: 5;
+        }
+
+        .link {
+            color: blue;
+        }
+    </style>
+    <script type="text/javascript">
+        function bilancia(textBox1, textBox2) {
+            if (textBox1 != "" && textBox2 != "") {
+                if (textBox2 == "Acciaio" || textBox2 == "acciaio" || textBox2 == "Ottone" || textBox2 == "ottone" || textBox2 == "Alluminio" || textBox2 == "alluminio" || textBox2 == "Rame" || textBox2 == "rame") {
+                    var counter=0,acciaio=8,ottone=8.7,alluminio=7.1,rame=8.9;
+                    for (var i = 0; i < textBox1.length; i++)  if (parseInt(textBox1.charAt(i)) < 0 && parseInt(textBox1.charAt(i)) > 9) counter++;
+                    if(counter==0) if(textBox2=="Acciaio"||textBox2=="acciaio") document.getElementById("result").innerHTML = parseInt(textBox1)*acciaio;
+                    else if(textBox2=="Ottone"||textBox2=="ottone") document.getElementById("result").innerHTML = parseInt(textBox1)*ottone;
+                    else if(textBox2=="Alluminio"||textBox2=="alluminio") document.getElementById("result").innerHTML = parseInt(textBox1)*alluminio;
+                    else if(textBox2=="Rame"||textBox2=="rame") document.getElementById("result").innerHTML = parseInt(textBox1)*rame;
+                } else document.getElementById("result").innerHTML = "Non accettato";
+            } else document.getElementById("result").innerHTML = "Compila tutto";
+        }
+    </script>
+</head>
+
+<body>
+    Volume: <input type="text" value="" id="textbl1"><br><br>
+    Materiale: <input type="text" value="" id="textbl2"><input type="button" value="Calcola!" name="btn"
+        onclick="bilancia(document.getElementById('textbl1').value,document.getElementById('textbl2').value);"
+        style="margin-left: 30px;"><br><br>
+    Peso: <output id="result"></output>
+</body>
+
+</html>
