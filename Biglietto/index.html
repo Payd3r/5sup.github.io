@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Biglietteria</title>
+    <script type="text/javascript" src="calcoli.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+    <h1 class="titolo">Biglietteria</h1>
+    <form>
+        <!--text box-->
+        <p>Km: <input type="number" id="idKm" class="ins" min="0"></p>
+        <!--combo box-->
+        <p>Num. Posti:
+            <select id="posti" class="ins">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+            </select>
+        </p>
+        <!--radio button-->
+        <input type="radio" id="Prima" name="classe" class="ins">
+        <label for="Prima">Prima Classe</label><br>
+        <input type="radio" id="Seconda" name="classe" class="ins">
+        <label for="Seconda">Seconda Classe</label><br>
+        <!--button calcola costo-->
+        <p><input type="button" value="calcola" onclick="calcola()" class="ins"></p>
+        <p id="ris"></p>
+
+    </form>
+</body>
+
+</html>
