@@ -1,0 +1,33 @@
+.off {
+    display: table;
+    margin: 0 auto;
+    color: rgb(204, 39, 39);
+}
+
+.off1 {
+    display: table;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid rgba(187, 33, 33, 0.514);
+}
+
+.info {
+    display: table;
+    margin: auto;
+}
+
+#bottone {
+    position: relative;
+    left: 40%;
+    margin: auto;
+}
+.ins{
+    position: relative;
+    left: 6%;
+    margin: auto;
+}
+
+body {
+    background-color: rgb(182, 182, 182);    
+}
