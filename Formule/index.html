@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formule</title>
+    <script type="text/javascript" src="funzioni.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+    <h1 class="titolo">Inserire i propri dati:</h1>
+    <form>
+        <!--text box-->
+        <p>Altezza: <input type="number" id="altezza" class="ins" min="0" max="230"> cm</p>
+        <!--radio button-->
+        <input type="radio" id="maschio" name="sesso" class="ins">
+        <label for="maschio">maschio</label><br>
+        <input type="radio" id="femmina" name="sesso" class="ins">
+        <label for="femmina">femmina</label><br>
+        <!--text box-->
+        <p>Età: <input type="number" id="eta" class="ins" min="0"> anni</p>
+        <!--text box-->
+        <p>Peso: <input type="number" id="peso" class="ins" min="1"> kg</p>
+        <!--button calcola con le formule-->
+        <p><input type="button" value="calcola" onclick="calcola()" class="ins"></p>
+        <h1 class="titolo">Risultati</h1>
+        <h3>Formula di Lorenz</h3>
+        <p id="ris1"></p>
+        <h3>Formula di Broca</h3>
+        <p id="ris2"></p>
+        <h3>Formula di Wan der vael</h3>
+        <p id="ris3"></p>
+        <h3>Formula BMI</h3>
+        <p id="ris4"></p>
+        <button value="reset" onclick="reset()" class="ins">reset</button>
+    </form>
+</body>
+
+</html>

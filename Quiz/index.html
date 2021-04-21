@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz</title>
+    <script type="text/javascript" src="funzioni.js">
+    </script>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+
+<body>
+    <h1 class="titolo">Dati Anagrafici</h1>
+    <!--text box-->
+    <p>Cognome: <input type="text" id="cognome" class="ins"> Nome: <input type="text" id="nome" class="ins"></p>
+    <h1 class="titolo">Data di nascita</h1>
+    <!--text box-->
+    <p>Giorno: <input type="number" id="giorno" class="ins" min="0" max="31"> Mese:
+        <select name="mese" id="mese">
+            <option value="Gennaio">Gennaio</option>
+            <option value="Febbraio">Febbraio</option>
+            <option value="Marzo">Marzo</option>
+            <option value="Aprile">Aprile</option>
+            <option value="Maggio">Maggio</option>
+            <option value="Giugno">Giugno</option>
+            <option value="Luglio">Luglio</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Settembre">Settembre</option>
+            <option value="Ottobre">Ottobre</option>
+            <option value="Novembre">Novembre</option>
+            <option value="Dicembre">Dicembre</option>
+        </select>
+        Anno: <input type="number" id="anno" class="ins" min="1900" max="2021">
+    </p>
+    <fieldset>
+        <legend>Domande</legend>
+        <p>Qual è il linguaggio di programmazione utilizzato per creare e modificare i database? (in
+            maiuscolo)</p>
+        <input type="text" id="risposta1" class="ins">
+        <p>Quanti valori può assumere una variabile booleana?</p>
+        <select name="boolean" id="risposta2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="4">4</option>
+            <option value="256">256</option>
+        </select>
+        <p>Quali sono le librerie caricate a runtime?</p>
+        <!--radio button-->
+        <input type="radio" id="risposta3_1" name="librerie" class="ins">
+        <label for="statiche">statiche</label><br>
+        <input type="radio" id="risposta3_2" name="librerie" class="ins">
+        <label for="dinamiche">dinamiche</label><br>
+        <p>Quali tra queste sono parole chiave in C++?</p>
+        <!--check button-->
+        <input type="checkbox" id="risposta4_1" name="C" class="ins">
+        <label for="void">void</label><br>
+        <input type="checkbox" id="risposta4_2" name="C" class="ins">
+        <label for="integer">integer</label><br>
+        <input type="checkbox" id="risposta4_3" name="C" class="ins">
+        <label for="char">char</label><br>
+        <p>8 bit corrispondono a un...</p>
+        <input type="text" id="risposta5" class="ins">
+    </fieldset>
+
+    <p>
+        <!--button elabora-->
+        <input type="button" value="elabora" onclick="elabora()" class="ins">
+        <!--button cancella-->
+        <input type="button" value="cancella" onclick="cancella()" class="ins">
+        <!--button autoCompila-->
+        <input type="button" value="compila" onclick="compila()" class="ins">
+    </p>
+    <fieldset>
+        <legend>Esito</legend>
+        <p id="punteggio"> </p>
+    </fieldset>
+    <fieldset>
+        <legend>Utente</legend>
+        <p id="codiceUtente"> </p>
+        <p id="punteggioUtente"> </p>
+    </fieldset>
+</body>
+
+</html>
