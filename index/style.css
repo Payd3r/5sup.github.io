@@ -78,9 +78,22 @@ td {
 }
 
 .contenuto-footer {
+    margin-top: 75px;
+    margin-bottom: 10px;
     display: flex;
-    align-items:center;
-    justify-content:end;
+    align-items: center;
+    justify-content: end;
     flex-direction: column;
     text-align: end;
+    border-top:3px solid rgb(39, 39, 39);
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.primo {
+    margin-left: 20px;
+    margin-right: 20px;
 }
