@@ -4,12 +4,16 @@ var app = new Vue({
         voci_menu: [
             {
                 nome: "Instagram",
-                img: " ",
+                img: "https://payd3r.github.io/index/img/insta.png",
                 link: "https://www.instagram.com/_.andre2903._/?hl=it"
             }, {
                 nome: "Twitch",
-                img: " ",
+                img: "https://payd3r.github.io/index/img/twitch.png",
                 link: "https://www.twitch.tv/payd3r"
+            }, {
+                nome: "YouTube",
+                img: "https://payd3r.github.io/index/img/youtube.png",
+                link: "https://www.youtube.com/channel/UCRUQT68t3ny0nstS4HrOinA"
             }
         ],
         voci_teoria: [
@@ -51,11 +55,6 @@ var app = new Vue({
         ],
         voci_lab: [
             {
-                data: "Data",
-                titolo: "Titolo",
-                link: ""
-            },
-            {
                 data: "2 aprile 2021",
                 titolo: "Sito Influencer",
                 link: "https://payd3r.github.io/Influencer/Docs/Index.html"
@@ -76,17 +75,22 @@ var app = new Vue({
                 link: "https://payd3r.github.io/Formule/"
             },
             {
-                data: "3 Maggio 2021",
+                data: "26 aprile 2021",
+                titolo: "Esercizio QUIZ",
+                link: "https://payd3r.github.io/QUIZ/"
+            },
+            {
+                data: "3 maggio 2021",
                 titolo: "Logo olimpiadi",
                 link: "https://payd3r.github.io/Olimpiadi/"
             },
             {
-                data: "10 Maggio 2021",
+                data: "10 maggio 2021",
                 titolo: "Primo form con generazione Pdf",
                 link: "https://payd3r.github.io/PDF1/"
             },
             {
-                data: "13 Maggio 2021",
+                data: "13 maggio 2021",
                 titolo: "Assi cartesiani",
                 link: "https://payd3r.github.io/PianoCartesiano/"
             }

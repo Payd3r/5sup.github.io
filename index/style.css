@@ -1,10 +1,86 @@
 * {
     padding: 0;
     margin: 0;
+    background-color: rgb(109, 109, 109);
+    font-family: 'Inter', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    padding: 10px;
+    max-width: 45px;
+}
+
+.loghi {
+    max-width: 30px;
+    max-height: 30px;
+    padding-right: 10px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.titolo {
+    font-size: 20px;
+}
+
+.contenitore-tabella {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    min-width: 800px;
 }
 
 .tabella {
+    border: 2px solid rgb(172, 103, 0);
+    border-collapse: collapse;
+    border-radius: 5px 5px 5px 5px;
+    margin: 25px 0;
+    min-width: 400px;
+}
+
+.head {
+    background-color: rgb(145, 145, 145);
+    font-size: 22px;
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+td {
+    padding-top: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+    margin: 0;
+}
+
+.riga td {
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.titoloTab {
+    text-align: left;
+    max-width: 250px;
+}
+
+.contenuto-footer {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    align-items:center;
+    justify-content:end;
+    flex-direction: column;
+    text-align: end;
 }

@@ -6,37 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index/style.css">
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="contenitore-logo">
-            <img class="logo" src="https://www.geekandjob.com/uploads/wiki/f236a1aa005ef9a93041f294749e86d1.png" alt="">
-        </div>
-        <ul class="menu">
-            <li v-for="voce in voci_menu">
-                <a class="menu-link" :href="voce.link">{{voce.nome}}</a>
-            </li>
-        </ul>
-    </header>
-
     <div id="contenitore-vue">
+        <div class="header ">
+            <div class="contenitore-logo ">
+                <img class="logo " src="https://payd3r.github.io/index/img/logo.png" alt="">
+            </div>
+            <div class="titolo ">_.AUL_Payd3r._</div>
+            <ul class="menu ">
+                <li v-for="voce in voci_menu">
+                    <img :href="voce.link" :src="voce.img" alt="" class="loghi ">
+                </li>
+            </ul>
+        </div>
         <!--Tabella Info Teoria-->
-        <div class="tabella">
-            <table>
+        <div class="contenitore-tabella">
+            <table class="tabella">
                 <thead>
                     <tr>
-                        <th>Data</th>
-                        <th>Titolo</th>
-                        <th>Link</th>
+                        <th class="head">Data</th>
+                        <th class="head">Titolo</th>
+                        <th class="head">Link</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="voce in voci_teoria">
-                        <td>{{voce.data}}</td>
-                        <td>{{voce.titolo}}</td>
+                    <tr v-for="voce in voci_teoria" class="riga">
+                        <td style="text-align: right">{{voce.data}}</td>
+                        <td class="titoloTab">{{voce.titolo}}</td>
                         <td>
                             <a :href="voce.link">
                                 <img src="https://agora.ismonnet.it/agora/theme/image.php/boost/assign/1611140214/icon"
@@ -46,21 +48,19 @@
                     </tr>
                 </tbody>
             </table>
-        </div>
-        <!--Tabella Info Laboratorio-->
-        <div class="tabella">
-            <table>
+            <!--Tabella Info Laboratorio-->
+            <table class="tabella">
                 <thead>
                     <tr>
-                        <th>Data</th>
-                        <th>Titolo</th>
-                        <th>Link</th>
+                        <th class="head">Data</th>
+                        <th class="head">Titolo</th>
+                        <th class="head">Link</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr v-for="voce in voci_lab">
-                        <td>{{voce.data}}</td>
-                        <td>{{voce.titolo}}</td>
+                    <tr v-for="voce in voci_lab" class="riga">
+                        <td style="text-align: right">{{voce.data}}</td>
+                        <td class="titoloTab">{{voce.titolo}}</td>
                         <td>
                             <a :href="voce.link">
                                 <img src="https://agora.ismonnet.it/agora/theme/image.php/boost/assign/1611140214/icon"
@@ -72,7 +72,27 @@
             </table>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <footer>
+        <div class="contenuto-footer">
+            <h3>About me</h3>
+            <p>Link alla mia repository di github ed al mio profilo su agorá.</p>
+            <ul class="socials">
+                <li>
+                    <a href="https://payd3r.github.io/index/img/github.png"><img src="indeximg/github.png" alt="github"
+                            height="31px" width="31px" /></a>
+                </li>
+                <li>
+                    <a href="https://agora.ismonnet.it/agora/user/profile.php?id=8975"><img
+                            src="https://moodle.org/theme/image.php/moodleorg/theme_moodleorg/1617268593/moodle_logo_small"
+                            alt="Moodle" height="31px" width="102px" /></a>
+                </li>
+            </ul>
+            <p>Copyright &copy;2021 designed by <span>Mauri Andrea</span></p>
+        </div>
+    </footer>
+
+    <script src="index/script.js"></script>
 </body>
 
 </html>
