@@ -1,119 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Index of AUL_Payd3r</title>
-    <style>
-        body {
-            background: rgb(100, 100, 100);
-            vlink: blue;
-        }
-
-        #data {
-            white-space: nowrap;
-            text-align: right;
-        }
-
-        #top {
-            font-weight: bold;
-            font-size: 150%;
-            text-align: center;
-            font-color: 151, 45, 45;
-        }
-
-        #cont {
-            text-align: center;
-        }
-
-        .link {
-            color: blue;
-        }
-
-        table,
-        tr,
-        td {
-            border: 1px solid white;
-            border-collapse: collapse;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 
 <body>
-    <h1>This is the Index of Mauri Andrea</h1>
-    <table>
-        <tr>
-            <td id="top">Data</td>
-            <td id="top">Tipo</td>
-            <td id="top">Titolo</td>
-            <td id="top">Link</td>
-        </tr>
-        <tr>
-            <td id="data">29 marzo 2021</td>
-            <td id="cont">Teoria</td>
-            <td>es1,2,3 KhanAccademy</td>
-            <td id="cont"><a href="https://payd3r.github.io/KhanAccademy/Docs/es1.html" class="link">Es1</a>,<a
-                    href="https://payd3r.github.io/KhanAccademy/Docs/es2.html" class="link">Es2</a>,<a
-                    href="https://payd3r.github.io/KhanAccademy/Docs/es3.html" class="link">Es3</a></td>
-        </tr>
-        <tr>
-            <td id="data">2 aprile 2021</td>
-            <td id="cont">Lab</td>
-            <td>Sito Influencer</td>
-            <td id="cont"><a href="https://payd3r.github.io/Influencer/Docs/Index.html" class="link"> Index</a></td>
-        </tr>
-        <tr>
-            <td id="data">9 aprile 2021</td>
-            <td id="cont">Teoria</td>
-            <td>Viaggi,Blog KhanAccademy</td>
-            <td id="cont"><a href="https://payd3r.github.io/KhanAccademy/Docs/blog.html" class="link">Blog</a>,<a
-                    href="https://payd3r.github.io/KhanAccademy/Docs/viaggi.html" class="link"> Viaggi</a></td>
-        </tr>
-        <tr>
-            <td id="data">16 aprile 2021</td>
-            <td id="cont">Lab</td>
-            <td>Calcolo del peso di un oggetto in metallo</td>
-            <td id="cont"><a href="https://payd3r.github.io/CalcolaPesoOgg/CalcolaPesoOgg.html" class="link">Es</a></td>
-        </tr>
-        <tr>
-            <td id="data">15 aprile 2021</td>
-            <td id="cont">Lab</td>
-            <td>Biglietto treno</td>
-            <td id="cont"><a href="https://payd3r.github.io/Biglietto/" class="link">Biglietteria</a></td>
-        </tr>
-        <tr>
-            <td id="data">22 aprile 2021</td>
-            <td id="cont">Lab</td>
-            <td>Calcolo Peso Forma</td>
-            <td id="cont"><a href="https://payd3r.github.io/Formule/" class="link">Sito</a></td>
-        </tr>
-        <tr>
-            <td id="data">26 aprile 2021</td>
-            <td id="cont">Lab</td>
-            <td>Quiz</td>
-            <td id="cont"><a href="https://payd3r.github.io/Quiz/" class="link">Quiz</a></td>
-        </tr>
-        <tr>
-            <td id="data">21 aprile 2021</td>
-            <td id="cont">Teoria</td>
-            <td>Tag select Dinamico</td>
-            <td id="cont"><a href="https://payd3r.github.io/Telefonia/" class="link">Preview</a></td>
-        </tr>
-        <tr>
-            <td id="data">23 aprile 2021</td>
-            <td id="cont">Teoria</td>
-            <td>Tag select Dinamico PCTO </td>
-            <td id="cont"><a href="https://payd3r.github.io/PCTO/" class="link">Info...</a></td>
-        </tr>
-        <tr>
-            <td id="data">3 Maggio 2021</td>
-            <td id="cont">Lab</td>
-            <td>Logo olimpiadi </td>
-            <td id="cont"><a href="https://payd3r.github.io/Olimpiadi/" class="link">view...</a></td>
-        </tr>
+    <header>
+        <div class="contenitore-logo">
+            <img class="logo" src="https://www.geekandjob.com/uploads/wiki/f236a1aa005ef9a93041f294749e86d1.png" alt="">
+        </div>
+        <ul class="menu">
+            <li v-for="voce in voci_menu">
+                <a class="menu-link" :href="voce.link">{{voce.nome}}</a>
+            </li>
+        </ul>
+    </header>
 
-    </table>
-
+    <div id="contenitore-vue">
+        <!--Tabella Info Teoria-->
+        <div class="tabella">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Titolo</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="voce in voci_teoria">
+                        <td>{{voce.data}}</td>
+                        <td>{{voce.titolo}}</td>
+                        <td>
+                            <a :href="voce.link">
+                                <img src="https://agora.ismonnet.it/agora/theme/image.php/boost/assign/1611140214/icon"
+                                    alt="">
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--Tabella Info Laboratorio-->
+        <div class="tabella">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Titolo</th>
+                        <th>Link</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="voce in voci_lab">
+                        <td>{{voce.data}}</td>
+                        <td>{{voce.titolo}}</td>
+                        <td>
+                            <a :href="voce.link">
+                                <img src="https://agora.ismonnet.it/agora/theme/image.php/boost/assign/1611140214/icon"
+                                    alt="">
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
