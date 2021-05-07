@@ -1,0 +1,42 @@
+body{
+    background:rgb(109, 109, 109);
+}
+#button{
+    margin-left: 20px;
+    padding:10px;
+}
+#messaggio{
+    height: 100px;
+    margin-top:10px;
+}
+h1{
+    color:red;
+    min-width: 220px;
+    background: lightgray;
+    border: 5px solid red;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 69%;    
+}
+.ins{
+    color:rgb(0, 0, 0);
+    min-width: 350px;
+    background: lightgray;
+    border: 5px solid rgb(159, 81, 211);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 50%;  
+}
+.ris{
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    min-width: 350px;
+    background: lightgray;
+    border: 5px solid rgb(81, 211, 113);
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 50%;  
+}

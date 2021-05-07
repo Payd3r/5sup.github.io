@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JAPDF</title>
+</head>
+
+<body>
+    <h1>Creare un pdf con JavaScript</h1>
+    <form>
+        <div class="ins">
+            <p>Inserire il nome: <input type="text" id="nome" value="*"></p>
+            <p>Inserire il cognome: <input type="text" id="cognome" value="*"></p>
+            <p>Inserire il numero di telefono: <input type="number" id="numero" value="39"></p>
+            <p>Inserire l'email: <input type="text" id="mail" value="*"></p>
+            <p>Inserire un messaggio:<br><input type="text" id="messaggio" value="*"></p>
+        </div>
+        <br>
+        <div class="ris">Clicca il bottone per scaricare il pdf con i tuoi dati<input type="button" id="button"
+                value="Download Pdf" onclick="scarica()"></div>
+    </form>
+</body>
+
+</html>
