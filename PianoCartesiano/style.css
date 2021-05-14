@@ -6,9 +6,9 @@
 
  .contenitore {
      display: flex;
-     flex-direction: row;
-     flex-wrap: wrap;
+     flex-direction: column;
      justify-content:center;
+     align-items: center;
  }
 
  .bottone {
@@ -23,4 +23,5 @@
      background-color: white;
      border: 5px solid rgb(180, 0, 0);
      border-radius: 5px;
+	 width: 500px;
  }
