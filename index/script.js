@@ -94,6 +94,12 @@ var app = new Vue({
                 titolo: "Assi cartesiani",
                 link: "https://payd3r.github.io/PianoCartesiano/"
             }
+            ,
+            {
+                data: "16 maggio 2021",
+                titolo: "Verifica parte A",
+                link: "https://payd3r.github.io/Preverifica/"
+            }
         ],
         dark_mode: false
     }
