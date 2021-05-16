@@ -1,0 +1,62 @@
+legend {
+    text-align: center;
+    color: aqua;
+}
+
+fieldset {
+    border-color: aqua;
+}
+
+form {
+    display: block;
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#codice {
+    margin-left: 30px;
+    width: 120px;
+}
+
+#cancella {
+    margin-left: 40px;
+    width: 80px;
+}
+
+#ris {
+    margin-top: 5px;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 235px;
+}
+
+#azienda {
+    margin-left: 80px;
+}
+
+#giorno {
+    margin-top: 5px;
+    margin-left: 25px;
+    width: 40px;
+}
+
+#anno {
+    width: 60px;
+}
+
+#nProdotti {
+    margin-top: 5px;
+    width: 110px;
+    margin-left: 55px;
+}
+
+#prezzo {
+    margin-top: 5px;
+    width: 110px;
+    margin-left: 145px;
+}
+
+#i10 {
+    margin-left: 80px;
+}

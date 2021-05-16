@@ -8,13 +8,16 @@ function disegna() {
 
     ctx.moveTo(20, Oy);
     ctx.lineTo(c.width - 20, Oy);
-    ctx.moveTo(c.width - 20, Oy - 4);
+	ctx.stroke();
+    ctx.moveTo(c.width - 20, Oy - 4);	
     ctx.lineTo(c.width - 20, Oy + 4);
     ctx.lineTo(c.width - 12, Oy);
     ctx.lineTo(c.width - 20, Oy - 4);
-    ctx.moveTo(Ox, 20);
+	ctx.stroke();
+    ctx.moveTo(Ox, 20);	
     ctx.lineTo(Ox, c.height - 20);
     ctx.moveTo(Ox - 4, 20);
+	ctx.stroke();
     ctx.lineTo(Ox + 4, 20);
     ctx.lineTo(Ox, 12);
     ctx.lineTo(Ox - 4, 20);

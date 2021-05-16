@@ -96,6 +96,5 @@ var app = new Vue({
             }
         ],
         dark_mode: false
-
     }
 })

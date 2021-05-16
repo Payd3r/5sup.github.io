@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Ordine</legend>
+            Azienda: <input type="text" id="azienda"> <br>
+            Data acquista:
+            <input type="number" id="giorno">
+            <select name="mese" id="mese">
+                <option value="Gennaio">Gennaio</option>
+                <option value="Febbraio">Febbraio</option>
+                <option value="Marzo">Marzo</option>
+            </select>
+            <input type="number" id="anno">
+            <br>
+            Nr. prodotti acquistati: <input type="number" id="nProdotti"> <br>
+            Prezzo: <input type="number" id="prezzo"> <br>
+            Sconto:
+            <input type="radio" id="i10" name="sconto">10%
+            <input type="radio" id="i20" name="sconto">20%
+            <input type="radio" id="i30" name="sconto">30%
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>Codice</legend>
+            <button id="codice" onclick="controllo()">Codice Acquisto</button>
+            <button id="cancella" onclick="clear()">Cancella</button><br>
+            <input type="text" id="ris">
+        </fieldset>
+    </form>
+    <button onclick="compila()">compila</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
