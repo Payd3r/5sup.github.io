@@ -51,6 +51,11 @@ var app = new Vue({
                 data: "23 aprile 2021",
                 titolo: "PCTO",
                 link: "https://payd3r.github.io/PCTO/"
+            },
+            {
+                data: "20 maggio 2021",
+                titolo: "Visualizzazione di dati presenti in un file di testo",
+                link: "https://payd3r.github.io/FrigoSmart/"
             }
         ],
         voci_lab: [
