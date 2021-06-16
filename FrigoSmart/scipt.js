@@ -49,3 +49,7 @@ function addTable(lines) {
     }
     myTableDiv.appendChild(table);
 }
+
+var paragrafo = document.createElement("p");
+paragrafo.innerHTML = "ciao";
+document.body.appendChild(paragrafo);
