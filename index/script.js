@@ -103,6 +103,11 @@ var app = new Vue({
                 data: "16 maggio 2021",
                 titolo: "Verifica parte A",
                 link: "https://payd3r.github.io/Preverifica/"
+            }            ,
+            {
+                data: "16 Giugno 2021",
+                titolo: "Genera QrCode",
+                link: "https://payd3r.github.io/QrCode/"
             }
         ],
         dark_mode: false
