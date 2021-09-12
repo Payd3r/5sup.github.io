@@ -1,0 +1,134 @@
+﻿<Window x:Class="Monefy.AggiungiMovimento"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Monefy"
+        mc:Ignorable="d"
+        Title="AggiungiMovimento" Height="450" Width="800">
+    <Grid Background="#FFF2FFF6">
+        <Image Margin="418,59,57,55" Source="categorie2.png" Stretch="Fill"/>
+        <Image Margin="0,-5,419,231" Source="movimento.png" Stretch="Fill"/>
+        <Image Margin="418,363,57,-2" Source="incassi.jpg" Stretch="Fill"/>
+        <Image Margin="0,0,0,367" Source="logo2.png" Stretch="Fill"/>
+        <TextBox x:Name="nota" HorizontalAlignment="Left" Height="32" TextWrapping="Wrap" VerticalAlignment="Top" Width="284" Margin="74,150,0,0" FontSize="20" Background="{x:Null}">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <Label x:Name="recap" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="12,311,0,0" Height="39" Width="346" FontSize="20" Foreground="#FF853434"/>
+        <Button x:Name="btnConferma" Content="Conferma" HorizontalAlignment="Left" VerticalAlignment="Top" Width="185" Margin="97,357,0,0" Height="46" FontSize="30" Background="#FF7AC793" Click="btnConferma_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Label x:Name="segno" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="97,73,0,0" FontSize="30" Width="44" Height="57"/>
+        <TextBox x:Name="importo" HorizontalAlignment="Left" Height="46" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="153" Margin="153,80,0,0" FontSize="35">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0"/>
+            </TextBox.Background>
+        </TextBox>
+        <Label Content="Scontrino per garanzia" HorizontalAlignment="Left" VerticalAlignment="Top" Width="211" Margin="12,197,0,0" FontSize="20" Height="42"/>
+        <Button Content="Scegli file..." HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Margin="228,197,0,0" Height="42" FontSize="20" Background="#FF7AC793" Click="Button_Click_1"/>
+        <Label x:Name="percorso" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="346" Margin="12,249,0,0" FontSize="15" Height="29"/>
+        <Button x:Name="btnAbbigliamento" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="430,65,0,0" Height="47" Background="{x:Null}" Click="btnAbbigliamento_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnAlimentari" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="532,65,0,0" Height="47" Background="{x:Null}" Click="btnAlimentari_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnAnimali" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="635,65,0,0" Height="47" Background="{x:Null}" Click="btnAnimali_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnAuto" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="431,125,0,0" Height="48" Background="{x:Null}" Click="btnAuto_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnBollette" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="532,125,0,0" Height="48" Background="{x:Null}" Click="btnBollette_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnCasa" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="635,125,0,0" Height="48" Background="{x:Null}" Click="btnCasa_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnComunicazioni" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="430,187,0,0" Height="47" Background="{x:Null}" Click="btnComunicazioni_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnIgene" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="531,187,0,0" Height="47" Background="{x:Null}" Click="btnIgene_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnIntrattenimento" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="634,187,0,0" Height="47" Background="{x:Null}" Click="btnIntrattenimento_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnRegali" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="431,247,0,0" Height="47" Background="{x:Null}" Click="btnRegali_Click" RenderTransformOrigin="0.627,0.649">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnRistorante" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="532,247,0,0" Height="47" Background="{x:Null}" Click="btnRistorante_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnSalute" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="635,247,0,0" Height="47" Background="{x:Null}" Click="btnSalute_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnSport" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="431,307,0,0" Height="49" Background="{x:Null}" Click="btnSport_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnTaxi" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="532,309,0,0" Height="47" Background="{x:Null}" Click="btnTaxi_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnTrasporti" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="635,307,0,0" Height="49" Background="{x:Null}" Click="btnTrasporti_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnStipendio" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="635,368,0,0" Height="47" Background="{x:Null}" Click="btnStipendio_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnRisparmi" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="532,368,0,0" Height="47" Background="{x:Null}" Click="btnRisparmi_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button x:Name="btnDepositi" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="85" Margin="430,368,0,0" Height="47" Background="{x:Null}" Click="btnDepositi_Click">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+        <Button Content="Esci" HorizontalAlignment="Left" VerticalAlignment="Top" Width="84" Margin="700,10,0,0" Height="31" Background="#FF7AC793" FontSize="20" Click="Button_Click_2">
+            <Button.BorderBrush>
+                <SolidColorBrush Color="#FF707070" Opacity="0"/>
+            </Button.BorderBrush>
+        </Button>
+
+    </Grid>
+</Window>

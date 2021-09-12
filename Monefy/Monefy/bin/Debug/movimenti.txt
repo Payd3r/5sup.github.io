@@ -1,0 +1,17 @@
++;55;onno;stipendio;;05/01/2015 05:50:00
++;55;zia;risparmi;;05/01/2015 05:50:00
+-;12;cane;animali;;05/01/2015 05:50:00
++;58;onno;stipendio;;05/01/2015 05:50:00
+-;22;casa;taxi;;05/01/2015 05:50:00
+-;23;;Abbigliamento;;11/09/2021 18:58:39
+-;5;ciao ciao ciao;Igene;;12/09/2021 12:25:11
+-;5;spesa;Intrattenimento;;12/09/2021 12:25:39
+-;89;paghetta;Stipendio;;12/09/2021 12:25:56
+-;14;aiuto;Regali;;12/09/2021 12:58:23
+-;89;big coop;Risparmi;;12/09/2021 12:59:46
++;160;vendita;Depositi;;12/09/2021 13:01:11
++;45;sdaa;Comunicazioni;;12/09/2021 13:29:57
+-;76;nuovo telefono;Comunicazioni;C:\Users\Payd3r\Desktop\Documento-commerciale-1577967090581.jpg;12/09/2021 13:32:30
++;12;garanzia;Auto;C:\Users\Payd3r\Desktop\IMG_20210912_223556.jpg;12/09/2021 22:40:58
++;5;adsa;Igene;C:\Users\Payd3r\Desktop\IMG_20210912_223548.jpg;12/09/2021 23:11:23
++;124;fas;Depositi;C:\Users\Payd3r\Desktop\IMG_20210912_223445.jpg;12/09/2021 23:48:54
