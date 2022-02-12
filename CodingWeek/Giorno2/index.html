@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="contenitore-vue" :class="modalita">
+        <br>
+        <button @click="attiva_Dark" :class="bottoneDark">Eneble {{modalita}}</button>
+        <div class="contenitore">
+            <h1 :class="titolo">Inserire nome e cognome</h1>
+            <input type="text" v-model="nome" :class="input">
+            <input type="text" v-model="cognome" @keyup.enter="saluto" :class="input">
+            <p :class="preview">Preview: {{nome}} {{cognome}} </p>
+            <button @click="saluto" :class="bottone">{{testoBottone}}</button>
+            <p><a :href="link" :class="link">Vai a google</a></p>
+            <p v-if="visibile" :class="link">Sei stato salutato!</p>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
